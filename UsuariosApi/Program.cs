@@ -11,15 +11,22 @@ var builder = WebApplication.CreateBuilder(args);
 //VARIÁVEL PARA DEFINIÇÕES ABAIXO
 var connectionString = builder.Configuration.GetConnectionString("UsuarioConnection");
 builder.Services.AddDbContext<UsuarioDbContext>(opts =>
-opts.UseMySql(connectionString,
-              ServerVersion.AutoDetect(connectionString)));
+{
+    opts.UseMySql(connectionString,
+              ServerVersion.AutoDetect(connectionString));
+});
+
 
 //ADICIONANDO Identity AO PROJETO - RELACIONADO COM USUARIO E SEU PAPEL
+// .AddEntityFrameworkStores<UsuarioDbContext>() IDENTITY CUIDA DA CONEXÃO COM BD ATRAVÉS DE UsuarioDbContext
+// .AddDefaultTokenProviders(); AUTENTICAÇÃO
 builder.Services
     .AddIdentity<Usuario, IdentityRole>()
-    .AddEntityFrameworkStores<UsuarioDbContext>() //IDENTITY CUIDA DA CONEXÃO COM BD ATRAVÉS DE UsuarioDbContext
-    .AddDefaultTokenProviders();//AUTENTICAÇÃO
+    .AddEntityFrameworkStores<UsuarioDbContext>() 
+    .AddDefaultTokenProviders();
 
+//AUTOMAPPER
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

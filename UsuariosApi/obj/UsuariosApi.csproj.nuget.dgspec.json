@@ -67,7 +67,7 @@
             },
             "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
-              "version": "[9.0.4, )"
+              "version": "[6.0.14, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
