@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
 using UsuariosApi.Data;
 using UsuariosApi.Models;
+using UsuariosApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +28,9 @@ builder.Services
 
 //AUTOMAPPER
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+//CONFIGURADO SERVICE Services->CadastroService
+builder.Services.AddScoped<CadastroService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
