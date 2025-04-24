@@ -13,23 +13,37 @@ namespace UsuariosApi.Controllers
     {
 
         //PROPRIEDADES
-        private CadastroService _cadastroService;//SERVIÇO QUE CONTÉM A LÓGIDA DO CADASTRO
+        private UsuarioService _usuarioService;//SERVIÇO QUE CONTÉM A LÓGIDA DO CADASTRO
 
+
+        
         //CONSTRUTOR
-        public UsuarioController(CadastroService cadastroService)
+        public UsuarioController(UsuarioService cadastroService)
         {
-            _cadastroService = cadastroService;
+            _usuarioService = cadastroService;
         }
 
         //DEMAIS MÉTODOS
-        [HttpPost]
+        //MÉTODO QUE UTILIZA SERVIÇO UsuarioService->Cadastra PARA CADASTRAR USUÁRIO
+        [HttpPost("cadastro")]//ROTA cadastro DIFERENCIAS DOS DEMAIS MÉTODOS POST
         public async Task<IActionResult> CadastraUsuario(CreateUsuarioDto dto)
         {    //async Task - RETORNO DE MÉTODO await É TIPO async Task<>
 
             //LÓGICA DE CADASTRO COMO SERVIÇO EM Services->CadastroService->Cadastra()
-            await _cadastroService.Cadastra(dto);
+            await _usuarioService.Cadastra(dto);
             return Ok("Usuário cadastrado!"); //200 CODE
-
         }
+
+        //MÉTODO QUE UTILIZA SERVIÇO UsuarioService->Login PARA LOGAR USUÁRIO
+        [HttpPost("login")]//ROTA login DIFERENCIAS DOS DEMAIS MÉTODOS POST
+        public async Task<IActionResult> Login(LoginUsuarioDto dto)
+        {
+            await _usuarioService.Login(dto);
+            return Ok("Usuário autenticado");
+        }
+
+
+
+
     }
 }
