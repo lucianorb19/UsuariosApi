@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\creas\\desktop\\usuariosapi\\usuariosapi\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\creas\\desktop\\usuariosapi\\usuariosapi\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\creas\\desktop\\usuariosapi\\usuariosapi\\data\\dtos\\createusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\data\\dtos\\createusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\creas\\desktop\\usuariosapi\\usuariosapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateUsuarioDto.cs",
+              "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Data\\Dtos\\CreateUsuarioDto.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Data\\Dtos\\CreateUsuarioDto.cs",
+              "ToolTip": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Data\\Dtos\\CreateUsuarioDto.cs",
+              "RelativeToolTip": "UsuariosApi\\Data\\Dtos\\CreateUsuarioDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T13:11:07.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Models\\Usuario.cs",
+              "RelativeToolTip": "UsuariosApi\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T13:10:57.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Services\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Services\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Services\\UsuarioService.cs",
+              "RelativeToolTip": "UsuariosApi\\Services\\UsuarioService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAwwDoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T12:56:54.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Services\\TokenService.cs",
+              "RelativeToolTip": "UsuariosApi\\Services\\TokenService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T13:01:28.642Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

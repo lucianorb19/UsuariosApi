@@ -11,15 +11,18 @@ namespace UsuariosApi.Services
         private IMapper _mapper; //AutoMap
         private UserManager<Usuario> _userManager;//GERENCIA ALGUNS MÉTODOS DO IDENTITY PARA USUÁRIO
         private SignInManager<Usuario> _signInManager;//GERENCIA LOGIN DO IDENTITY PARA USUÁRIO
+        private TokenService _tokenService;//GERA JSON WEB TOKEN - AUTENTICAÇÃO APÓS LOGAR
 
         //CONSTRUTOR
         public UsuarioService(IMapper mapper, 
-                              UserManager<Usuario> userManager, 
-                              SignInManager<Usuario> signInManager)
+                              UserManager<Usuario> userManager,
+                              SignInManager<Usuario> signInManager,
+                              TokenService tokenService)
         {
             _mapper = mapper;
             _userManager = userManager;
             _signInManager = signInManager;
+            _tokenService = tokenService;
         }
 
         //DEMAIS MÉTODOS
@@ -46,10 +49,16 @@ namespace UsuariosApi.Services
             var resultado = await _signInManager.PasswordSignInAsync(dto.Username,
                                                                      dto.Password, 
                                                                      false, false);
+            //LOGIN FALHOU
             if (!resultado.Succeeded)
             {
                 throw new ApplicationException("Usuário não autenticado");
             }
+
+            //LOGIN OK
+            _tokenService.GenerateToken(usuario);
+
+
         }
 
 
