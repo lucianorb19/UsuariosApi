@@ -1,8 +1,11 @@
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using UsuariosApi.Authorization;
 using UsuariosApi.Data;
 using UsuariosApi.Models;
@@ -46,6 +49,24 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//EXPLICITAÇÃO DO FUNCIOAMENTO DO TOKEN
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey //CHAVE DE Services->TokenServices->GenerateToken
+            (Encoding.UTF8.GetBytes("luciano31646316465431654646465435454654")),
+        ValidateAudience = false, //MITIGA CASOS DE REDIRECIONAMENTO SE true
+        ValidateIssuer = false,
+        ClockSkew = TimeSpan.Zero//ALINHAMENTO RELÓGIO
+    };
+});
+
+
 //POLÍTICA DE ACESSO PARA AcessoController - [Authorize(Policy = "IdadeMinima")]
 builder.Services.AddAuthorization(options =>
 {
@@ -64,7 +85,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
