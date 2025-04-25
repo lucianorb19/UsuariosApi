@@ -34,12 +34,13 @@ namespace UsuariosApi.Controllers
             return Ok("Usuário cadastrado!"); //200 CODE
         }
 
+
         //MÉTODO QUE UTILIZA SERVIÇO UsuarioService->Login PARA LOGAR USUÁRIO
-        [HttpPost("login")]//ROTA login DIFERENCIAS DOS DEMAIS MÉTODOS POST
+        [HttpPost("login")]//ROTA login DIFERENCIA DOS DEMAIS MÉTODOS POST
         public async Task<IActionResult> Login(LoginUsuarioDto dto)
         {
-            await _usuarioService.Login(dto);
-            return Ok("Usuário autenticado");
+            var token = await _usuarioService.Login(dto);
+            return Ok(token);
         }
 
 

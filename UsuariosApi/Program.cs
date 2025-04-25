@@ -29,8 +29,11 @@ builder.Services
 //AUTOMAPPER
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-//CONFIGURADO SERVICE Services->CadastroService
+//CONFIGURADO SERVICE Services->UsuarioService
 builder.Services.AddScoped<UsuarioService>();
+//CONFIGURADO SERVICE Services->TokenService
+builder.Services.AddScoped<TokenService>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

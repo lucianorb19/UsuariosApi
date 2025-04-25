@@ -10,15 +10,11 @@ namespace UsuariosApi.Services
     {
         //PROPRIEDADES
 
-
-
         //CONSTRUTOR
-
-
 
         //DEMAIS MÉTODOS
         //MÉTODO QUE GERA O JSON WEB TOKEN-JWT, DADO UM OBJETO USUARIO 
-        public void GenerateToken(Usuario usuario)
+        public string GenerateToken(Usuario usuario)
         {
             //Claim[] - VETOR DE REIVINDICAÇÕES PARA A GERAÇÃO DO JWT
             Claim[] claims = new Claim[]
@@ -30,8 +26,8 @@ namespace UsuariosApi.Services
             };
 
             //CHAVE DE GERAÇÃO DAS CREDENCIAIS
-            var chave = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("luciano"));
-            //GERAÇÃO DA CHAVE USA UMA SEQUENCIA QUALQUER DE CARACTERES - luciano OU QUALQUER OUTRA COISA
+            var chave = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("luciano31646316465431654646465435454654"));
+            //GERAÇÃO DA CHAVE USA UMA SEQUENCIA QUALQUER DE CARACTERES MINIMO 128bits
 
             //CREDENCIAIS
             var signingCredentials = new SigningCredentials(chave, SecurityAlgorithms.HmacSha256);
@@ -45,10 +41,8 @@ namespace UsuariosApi.Services
                 signingCredentials: signingCredentials
                 );
 
-
-
-
-
+            //RETORNO TOKEN EM FORMA DE STRING
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
 }

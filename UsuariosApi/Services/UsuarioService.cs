@@ -43,9 +43,12 @@ namespace UsuariosApi.Services
             }
         }
 
+
         //MÉTODO QUE REALIZA O LOGIN DO USUÁRIO
-        public async Task Login(LoginUsuarioDto dto)
-        {
+        public async Task<string> Login(LoginUsuarioDto dto)
+        {    //async Taks<> - POR CAUSA DO await
+             //string - POR QUE O TOKEN RETORNADO É STRING
+
             var resultado = await _signInManager.PasswordSignInAsync(dto.Username,
                                                                      dto.Password, 
                                                                      false, false);
@@ -56,9 +59,18 @@ namespace UsuariosApi.Services
             }
 
             //LOGIN OK
-            _tokenService.GenerateToken(usuario);
+            //CONSULTAR QUAL O USUÁRIO ATUAL - PELO Username (MAIÚSCULO)
+            //Username é único? (Identity GARANTE)
+            var usuario = _signInManager
+                .UserManager
+                .Users
+                .FirstOrDefault(user => user.NormalizedUserName == dto.Username.ToUpper());
 
+            //OBTER O TOKEN DE ACESSO PARA ESSE USUÁRIO
+            var token = _tokenService.GenerateToken(usuario);
 
+            //RETORNÁ-LO
+            return token;
         }
 
 
