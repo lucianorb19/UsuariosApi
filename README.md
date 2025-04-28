@@ -2,9 +2,11 @@
  Web API para gerenciamento de usuários - com .NET 6.0 e Identity  
 
  # DOWNLOADS NECESSÁRIOS
- * VisualStudio Community 2022
- * .NET 6.0.402
- * Baixar->Ferramentas->Gerenciador de Pacotes do NuGet->Gerenciar Pacotes NuGet para Solução->
+ * VisualStudio Community 2022;
+ * .NET 6.0.402;
+ * MySQL Community 8.0.31 (MySQL Server e MySQLWorkbench);
+ * Postman (versão mais recente);
+ * Baixar->Ferramentas->Gerenciador de Pacotes do NuGet->Gerenciar Pacotes NuGet para Solução:
     * AutoMapper.Extensions.Microsoft.DependencyInjection (v.12.0.0);
     * Microsoft.AspNetCore.Identity.EntityFrameworkCore (v.6.0.14);
     * Microsoft.EntityFrameworkCore.Tools (v.6.0.14);  
@@ -19,7 +21,7 @@
 * http://localhost:5076/acesso - Autenticação de JSON Web Token
 
 # DESCRIÇÃO DE MÉTODOS
-[Documentação Swagger](https://localhost:7215/swagger/index.html)
+[Documentação Swagger (com projeto compilado e rodando)](https://localhost:7215/swagger/index.html)
 
 # ESTRUTURA BASE DO PROJETO
 Models->Usuario  
