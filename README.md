@@ -32,7 +32,8 @@
     "Password" : "string"
 }
 ```
-* http://localhost:5076/acesso - Autenticação de JSON Web Token
+* http://localhost:5076/acesso - Autenticação de JSON Web Token  
+
 GET - Authorization-> Beare Token com o token de acesso gerado em qualquer login bem sucedido
 
 # DESCRIÇÃO DE MÉTODOS
