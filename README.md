@@ -164,7 +164,7 @@ appsettings.json-> linha 8 abaixo
 
 Aplicar mudanças a BD
 Ferramentas-> Gerenciador de pacotes do Nuget-> Console do Gerenciador de Pacotes
-_Add-Migration “Criando Usuarios”_
+_Add-Migration “Criando Usuarios”_  
 _Update-Database_
 
 UsuarioController->AdicionaUsuario
@@ -213,7 +213,7 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 Tabela de usuários acessível pelo WorkBench em BD usuarioDB, tabela aspnetusers  
 Método de adicionar usuário acessível via Postman url  
-Até o momento: url por https não funciona.
+Até o momento: url por https não funciona.  
 _Lembrar que: O Identity traz mecanismos de segurança - senha fraca (sem maiúsculo, caractere especial, numero), campo de confirmação de senha inválido,...._  
 
 Agora, será feita a mudança da lógia de adicionar um usuário como serviço, e não como uma lógica toda dentro de UsuarioController.
@@ -296,7 +296,9 @@ builder.Services.AddScoped<CadastroService>();
 ```
 
 Nesse momento, vamos usar o AddScoped assim o CadastroService sempre vai ser instanciado quando houver uma requisição nova que demande uma instância de CadastroService. Com isso, se fazemos uma requisição nova e chamamos o CadastroService, vamos instanciar um novo.  
+
 Se utilizássemos o AddSingleton seria um único CadastroService para todas as requisições que chegassem, ou seja, seria a mesma instância.  
+
 Já o AddTransient vai fazer sempre uma instância nova, mesmo que seja na mesma requisição. Assim, se chega uma requisição e precisamos de uma instância de CadastroService, vamos instanciar uma nova. Mas, se chega uma requisição e precisamos do CadastroService, também vai instanciar uma nova.  
 
 Após essas configurações, o cadastro de um novo usuário pode ser acessado pela mesma url http://localhost:5076/usuario
@@ -358,9 +360,9 @@ public async Task<IActionResult> Login(LoginUsuarioDto dto)
 }
 ```
 
-Agora temos duas rotas
-http://localhost:5076/usuario/cadastro Cadastro de usuário
-http://localhost:5076/usuario/login Login de usuário
+Agora temos duas rotas  
+* http://localhost:5076/usuario/cadastro Cadastro de usuário  
+* http://localhost:5076/usuario/login Login de usuário  
 
 # JSON WEB TOKEN
 Uma sequência de caractéres gerado por encoding hs256. É uma maneira de garantir ao sistema que o usuário está logado, exigindo esse token, gerado no momento do login, para acessar os métodos devidos.  
@@ -580,7 +582,6 @@ builder.Services.AddSingleton<IAuthorizationHandler, IdadeAuthorization>();
 No postman
 GET - http://localhost:5076/acesso em Authorization-Beare Token com o token de acesso gerado em qualquer login bem sucedido  
 _Mas, em IdadeAuthorization, dataNascimentoClaim está sendo null, porque ainda falta explicitarmos o uso do token._
-```
 
 Program->Linha 49, acima de de builder.Services.AddAuthorization
 ```
