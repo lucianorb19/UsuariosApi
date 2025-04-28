@@ -12,7 +12,5 @@ namespace UsuariosApi.Authorization
         {
             Idade = idade;
         }
-
-
     }
 }

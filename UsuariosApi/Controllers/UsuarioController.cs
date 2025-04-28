@@ -15,8 +15,6 @@ namespace UsuariosApi.Controllers
         //PROPRIEDADES
         private UsuarioService _usuarioService;//SERVIÇO QUE CONTÉM A LÓGIDA DO CADASTRO
 
-
-        
         //CONSTRUTOR
         public UsuarioController(UsuarioService cadastroService)
         {
@@ -42,9 +40,5 @@ namespace UsuariosApi.Controllers
             var token = await _usuarioService.Login(dto);
             return Ok(token);
         }
-
-
-
-
     }
 }

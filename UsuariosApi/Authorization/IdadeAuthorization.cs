@@ -23,7 +23,6 @@ namespace UsuariosApi.Authorization
             }
 
             //SE EXISTIR
-
             //SALVO DATA NASCIMENTO
             var dataNascimento = Convert.ToDateTime(dataNascimentoClaim.Value);
 

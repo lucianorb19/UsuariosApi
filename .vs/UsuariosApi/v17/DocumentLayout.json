@@ -1,12 +1,156 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\creas\\desktop\\usuariosapi\\usuariosapi\\authorization\\idadeauthorization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\authorization\\idadeauthorization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\creas\\desktop\\usuariosapi\\usuariosapi\\authorization\\idademinima.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\authorization\\idademinima.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\creas\\desktop\\usuariosapi\\usuariosapi\\controllers\\acessocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\controllers\\acessocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\creas\\desktop\\usuariosapi\\usuariosapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\creas\\desktop\\usuariosapi\\usuariosapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\creas\\desktop\\usuariosapi\\usuariosapi\\data\\dtos\\createusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\data\\dtos\\createusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\creas\\desktop\\usuariosapi\\usuariosapi\\data\\usuariodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\data\\usuariodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\creas\\desktop\\usuariosapi\\usuariosapi\\profiles\\usuarioprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\profiles\\usuarioprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IdadeAuthorization.cs",
+              "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Authorization\\IdadeAuthorization.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Authorization\\IdadeAuthorization.cs",
+              "ToolTip": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Authorization\\IdadeAuthorization.cs",
+              "RelativeToolTip": "UsuariosApi\\Authorization\\IdadeAuthorization.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T15:14:32.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IdadeMinima.cs",
+              "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Authorization\\IdadeMinima.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Authorization\\IdadeMinima.cs",
+              "ToolTip": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Authorization\\IdadeMinima.cs",
+              "RelativeToolTip": "UsuariosApi\\Authorization\\IdadeMinima.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T15:13:24.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AcessoController.cs",
+              "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Controllers\\AcessoController.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Controllers\\AcessoController.cs",
+              "ToolTip": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Controllers\\AcessoController.cs",
+              "RelativeToolTip": "UsuariosApi\\Controllers\\AcessoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T15:12:32.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "UsuariosApi\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:58:32.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsuarioProfile.cs",
+              "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Profiles\\UsuarioProfile.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Profiles\\UsuarioProfile.cs",
+              "ToolTip": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Profiles\\UsuarioProfile.cs",
+              "RelativeToolTip": "UsuariosApi\\Profiles\\UsuarioProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:57:44.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsuarioDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Data\\UsuarioDbContext.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Data\\UsuarioDbContext.cs",
+              "ToolTip": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Data\\UsuarioDbContext.cs",
+              "RelativeToolTip": "UsuariosApi\\Data\\UsuarioDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:57:07.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateUsuarioDto.cs",
+              "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Data\\Dtos\\CreateUsuarioDto.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Data\\Dtos\\CreateUsuarioDto.cs",
+              "ToolTip": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Data\\Dtos\\CreateUsuarioDto.cs",
+              "RelativeToolTip": "UsuariosApi\\Data\\Dtos\\CreateUsuarioDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:56:27.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Models\\Usuario.cs",
+              "RelativeToolTip": "UsuariosApi\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:55:44.04Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
