@@ -13,6 +13,14 @@
     * System.IdentityModel.Tokens.Jwt (v.6.27.0);
     * Microsoft.AspNetCore.Authentication.JwtBearer (v.6.0.14)
 
+# ROTAS
+* http://localhost:5076/usuario/cadastro - Cadastro de usuários
+* http://localhost:5076/usuario/login - Login de usuário cadastrado
+* http://localhost:5076/acesso - Autenticação de JSON Web Token
+
+# DESCRIÇÃO DE MÉTODOS
+[Documentação Swagger](https://localhost:7215/swagger/index.html)
+
 # ESTRUTURA BASE DO PROJETO
 Models->Usuario  
 ```
@@ -608,9 +616,67 @@ Program-> linha 74, abaixo de app.UseHttpsRedirection();
 app.UseAuthentication();
 ```
 
-Agora em GET - http://localhost:5076/acesso em Authorization-Beare Token com o token de acesso gerado em qualquer login bem sucedido a autenticação pelo token está funcional
-_Com usuário acima de 18 anos- acesso autorizado. Com usuários menores de idade - 404 not found_
+Agora em GET - http://localhost:5076/acesso em Authorization-Beare Token com o token de acesso gerado em qualquer login bem sucedido a autenticação pelo token está funcional  
+* Com usuário acima de 18 anos- _acesso autorizado_ ;
+* Com usuários menores de idade - _404 not found_ .
 
+# DADOS SENSÍVEIS - USANDO SECRETS  
+Secrets é um recurso do .NET capaz de guardar localmente informações sensíveis de um projeto durante o seu desenvolvimento. Por exemplo, para a nossa aplicação atual, a assymmetric key usada na geração do token, está exposta em Service->TokenService e Program
+
+Para utilizar o Secrets no projeto, abrir um Git Bash em ...UsuariosApi/UsuariosApi->
+```
+dotnet user-secrets init
 ```
 
+Isso habilita o uso do Secrets no projeto, o que pode ser observado na raiz do projeto (clicar, no VisualStudio, em UsuarioApi), na tag UserSecretsId.
+
+Para criar um Secret para guardar a Symmetric Key, no mesmo Git Bash aberto na pasta do projeto.  
 ```
+dotnet user-secrets set “apelido do secret” “valor dele na aplicação”
+```
+
+No exemplo da nossa aplicação:
+```
+dotnet user-secrets set “SymmetricSecurityKey” “.....”
+```
+
+Isso cria um arquivo json com o apelido e valor do Secret em C:\Users\Luciano\AppData\Roaming\Microsoft\UserSecrets
+
+Para aplicar os Secrets criados no sistema, mudar nos trechos de código onde ainda estão expostos os valores
+Program
+```
+var connectionString = builder.Configuration["ConnectionStrings:UsuarioConnection"];
+.
+.
+.
+ ValidateIssuerSigningKey = true,
+ IssuerSigningKey = new SymmetricSecurityKey //CHAVE DE Services->TokenServices->GenerateToken
+     (Encoding.UTF8.GetBytes(builder.Configuration["SymmetricSecurityKey"])),
+ ValidateAudience = false, //MITIGA CASOS DE REDIRECIONAMENTO SE true
+ ValidateIssuer = false,
+ ClockSkew = TimeSpan.Zero//ALINHAMENTO RELÓGIO
+```
+
+Service->TokenService
+Como a classe TokenService não tem acesso direto ao builder.Configuration(assim como a Program), é preciso criar um construtor que injete esse acesso
+```
+//PROPRIEDADES
+//PROPRIEDADE DE ACESSO AO builder.Configuration
+private IConfiguration _configuration;
+
+//CONSTRUTOR
+//CONSTRUTOR QUE INJETA O ACESSO AO builder.Configuration (para utilização do Secrets)
+public TokenService(IConfiguration configuration)
+{
+    _configuration = configuration;
+}
+.
+.
+.
+.
+//CHAVE DE GERAÇÃO DAS CREDENCIAIS
+var chave = new SymmetricSecurityKey(
+    Encoding.UTF8.GetBytes(_configuration["SymmetricSecurityKey"]));
+//GERAÇÃO DA CHAVE USA UMA SEQUENCIA QUALQUER DE CARACTERES MINIMO 128bits
+```
+

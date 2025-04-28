@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\creas\\desktop\\usuariosapi\\usuariosapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\creas\\desktop\\usuariosapi\\usuariosapi\\authorization\\idadeauthorization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B60CB7BB-016D-4153-A888-17FD33F8EDB3}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\authorization\\idadeauthorization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,19 +51,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Program.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Program.cs",
+              "ToolTip": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Program.cs",
+              "RelativeToolTip": "UsuariosApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T15:15:50.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "IdadeAuthorization.cs",
               "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Authorization\\IdadeAuthorization.cs",
               "RelativeDocumentMoniker": "UsuariosApi\\Authorization\\IdadeAuthorization.cs",
               "ToolTip": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Authorization\\IdadeAuthorization.cs",
               "RelativeToolTip": "UsuariosApi\\Authorization\\IdadeAuthorization.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-28T15:14:32.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "IdadeMinima.cs",
               "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Authorization\\IdadeMinima.cs",
               "RelativeDocumentMoniker": "UsuariosApi\\Authorization\\IdadeMinima.cs",
@@ -72,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AcessoController.cs",
               "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Controllers\\AcessoController.cs",
               "RelativeDocumentMoniker": "UsuariosApi\\Controllers\\AcessoController.cs",
@@ -85,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "UsuariosApi\\Controllers\\UsuarioController.cs",
@@ -98,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "UsuarioProfile.cs",
               "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Profiles\\UsuarioProfile.cs",
               "RelativeDocumentMoniker": "UsuariosApi\\Profiles\\UsuarioProfile.cs",
@@ -111,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UsuarioDbContext.cs",
               "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Data\\UsuarioDbContext.cs",
               "RelativeDocumentMoniker": "UsuariosApi\\Data\\UsuarioDbContext.cs",
@@ -124,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CreateUsuarioDto.cs",
               "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Data\\Dtos\\CreateUsuarioDto.cs",
               "RelativeDocumentMoniker": "UsuariosApi\\Data\\Dtos\\CreateUsuarioDto.cs",
@@ -137,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "UsuariosApi\\Models\\Usuario.cs",
