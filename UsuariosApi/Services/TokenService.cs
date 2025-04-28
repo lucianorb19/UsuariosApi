@@ -9,8 +9,15 @@ namespace UsuariosApi.Services
     public class TokenService
     {
         //PROPRIEDADES
+        //PROPRIEDADE DE ACESSO AO builder.Configuration
+        private IConfiguration _configuration;
 
         //CONSTRUTOR
+        //CONSTRUTOR QUE INJETA O ACESSO AO builder.Configuration (para utilização do Secrets)
+        public TokenService(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
 
         //DEMAIS MÉTODOS
         //MÉTODO QUE GERA O JSON WEB TOKEN-JWT, DADO UM OBJETO USUARIO 
@@ -26,7 +33,8 @@ namespace UsuariosApi.Services
             };
 
             //CHAVE DE GERAÇÃO DAS CREDENCIAIS
-            var chave = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("luciano31646316465431654646465435454654"));
+            var chave = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(_configuration["SymmetricSecurityKey"]));
             //GERAÇÃO DA CHAVE USA UMA SEQUENCIA QUALQUER DE CARACTERES MINIMO 128bits
 
             //CREDENCIAIS

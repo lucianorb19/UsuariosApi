@@ -16,7 +16,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 //VARIÁVEL PARA DEFINIÇÕES ABAIXO
-var connectionString = builder.Configuration.GetConnectionString("UsuarioConnection");
+var connectionString = builder.Configuration["ConnectionStrings:UsuarioConnection"];
+
 builder.Services.AddDbContext<UsuarioDbContext>(opts =>
 {
     opts.UseMySql(connectionString,
@@ -59,7 +60,7 @@ builder.Services.AddAuthentication(options =>
     {
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = new SymmetricSecurityKey //CHAVE DE Services->TokenServices->GenerateToken
-            (Encoding.UTF8.GetBytes("luciano31646316465431654646465435454654")),
+            (Encoding.UTF8.GetBytes(builder.Configuration["SymmetricSecurityKey"])),
         ValidateAudience = false, //MITIGA CASOS DE REDIRECIONAMENTO SE true
         ValidateIssuer = false,
         ClockSkew = TimeSpan.Zero//ALINHAMENTO RELÓGIO
