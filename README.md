@@ -34,7 +34,7 @@
 ```
 * http://localhost:5076/acesso - Autenticação de JSON Web Token  
 
-GET - Authorization-> Beare Token com o token de acesso gerado em qualquer login bem sucedido
+(Pelo Postman) -> GET - Authorization-> Beare Token com o token de acesso gerado em qualquer login bem sucedido
 
 # DESCRIÇÃO DE MÉTODOS
 [Documentação Swagger (com projeto compilado e rodando)](https://localhost:7215/swagger/index.html)
