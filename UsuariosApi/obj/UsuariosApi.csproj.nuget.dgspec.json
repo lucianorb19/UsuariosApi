@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\UsuariosApi.csproj": {}
+    "C:\\Users\\Luciano\\Desktop\\UsuariosApi\\UsuariosApi\\UsuariosApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\UsuariosApi.csproj": {
+    "C:\\Users\\Luciano\\Desktop\\UsuariosApi\\UsuariosApi\\UsuariosApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\UsuariosApi.csproj",
+        "projectUniqueName": "C:\\Users\\Luciano\\Desktop\\UsuariosApi\\UsuariosApi\\UsuariosApi.csproj",
         "projectName": "UsuariosApi",
-        "projectPath": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\UsuariosApi.csproj",
-        "packagesPath": "C:\\Users\\CREAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CREAS\\Desktop\\UsuariosApi\\UsuariosApi\\obj\\",
+        "projectPath": "C:\\Users\\Luciano\\Desktop\\UsuariosApi\\UsuariosApi\\UsuariosApi.csproj",
+        "packagesPath": "C:\\Users\\Luciano\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luciano\\Desktop\\UsuariosApi\\UsuariosApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CREAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Luciano\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
