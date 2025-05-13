@@ -39,6 +39,19 @@
 # DESCRIÇÃO DE MÉTODOS
 [Documentação Swagger (com projeto compilado e rodando)](https://localhost:7215/swagger/index.html)
 
+# PRIMEIROS PASSOS
+* Clonar o projeto;.....
+* Criar a base de dados padrão;
+    Aplicar mudanças a BD
+Ferramentas-> Gerenciador de pacotes do Nuget-> Console do Gerenciador de Pacotes
+_Add-Migration “Criando Usuarios”_  
+_Update-Database_
+
+* Habilitar as informações sensíveis com os dados salvos pelo secrets....
+* Cadastrar usuário (maior de idade);
+* Efetuar seu login;
+* Utilizar seu token gerado para testar acesso;
+
 # ESTRUTURA BASE DO PROJETO
 Models->Usuario  
 ```
